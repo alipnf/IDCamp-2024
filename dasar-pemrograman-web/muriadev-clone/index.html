@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MuriaDev Clone</title>
     <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">MuriaDev</a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="btn-nav">
+            <a href="#">Gabung Sekarang</a>
+          </div>
+        </ul>
+        <div class="btn-humberger">
+          <a href="#" id="humberger"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
   </body>
+
+  <!-- hamburger menu -->
+  <script>
+    feather.replace();
+  </script>
+  <!-- js -->
+  <script src="script.js"></script>
 </html>
