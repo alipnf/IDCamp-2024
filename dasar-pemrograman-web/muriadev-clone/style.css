@@ -26,6 +26,8 @@ body {
   background-color: #1c1e21;
   /* padding: 16px; */
   margin-top: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 /* navbar */
@@ -81,6 +83,201 @@ nav .menu a:hover {
 }
 /* navbar */
 
+/* main */
+main {
+  padding: 16px;
+}
+
+.container-welcome {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* flex-wrap: wrap;*/
+}
+
+.container-judul {
+  width: 50%;
+}
+
+.container-judul h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.container-judul p {
+  /* width: 45%; */
+  font-size: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-info a {
+  padding: 12px 24px;
+  width: 100px;
+  height: 100px;
+  background-color: #ad96df;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(56 30 114 / var(--tw-text-opacity));
+}
+
+.btn-info a:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #5a4191;
+}
+
+.container-mengapa {
+  margin-top: 100px;
+}
+.container-mengapa h1 {
+  font-size: 2.75rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.container-card {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-wrap: w;
+}
+
+.card .content {
+  width: 85%;
+  /* height: 392px; */
+  margin: 25% 10%;
+  /* margin-bottom: 0px;
+    margin-top: 150px;
+    margin-left: 16px;
+    margin-right: 16px; */
+  background-color: transparent;
+  text-align: center;
+}
+.card {
+  border-radius: 20px;
+  background-color: #3b3844;
+  width: 30%;
+  height: 520px;
+  /* display: flex; */
+}
+
+.card:hover {
+  --tw-shadow-color: #1e40af;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card img {
+  /* padding: 0 auto; */
+  margin: 0 auto;
+  width: 64px;
+  height: 60px;
+  background-color: transparent;
+}
+
+.card h3 {
+  color: rgb(234 221 255);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  background-color: transparent;
+  margin: 24px 0;
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  background-color: transparent;
+  text-align: left;
+}
+
+.container-tentang {
+  margin-top: 100px;
+}
+
+.container-tentang h1 {
+  font-size: 2.75rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.container-tentang p {
+  margin: 0 auto;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 1011.2px;
+}
+
+.container-acara {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.container-acara h1 {
+  font-size: 2.75rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.container-pesan {
+  margin: 0 auto;
+  border-radius: 0.75rem;
+  background-color: #3b82f6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-pesan .content {
+  padding: 60px 80px;
+  background-color: transparent;
+}
+
+.container-pesan .content h1 {
+  font-weight: 700;
+}
+
+.container-pesan .content p {
+  width: 100%;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container-pesan .btn-pesan a {
+  margin-left: 80px;
+  padding: 12px 24px;
+  width: 100px;
+  height: 30px;
+  background-color: #d0bcff;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(56 30 114 / var(--tw-text-opacity));
+  margin-right: 30px;
+}
+.btn-pesan a:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #5a4191;
+}
+
+/* main */
+
 /* Responsif */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -108,6 +305,62 @@ nav .menu a:hover {
   .menu.active {
     top: 80px;
   }
+
+  .container-welcome {
+    flex-wrap: wrap;
+  }
+  .container-welcome h1 {
+    line-height: 1.25;
+    font-weight: 700;
+    font-size: 2.25rem;
+  }
+
+  .container-welcome img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container-judul {
+    width: 100%;
+  }
+
+  /* card */
+  .card {
+    width: 100%;
+    height: 350px;
+  }
+
+  .card .content {
+    margin: 80px auto;
+    /* margin: auto auto; */
+    /* margin-left: auto;
+        margin-right: auto; */
+  }
+  /* card */
+
+  /* pesan */
+
+  .container-pesan {
+    flex-wrap: wrap;
+    height: 360px;
+  }
+
+  .btn-pesan {
+    margin: 0;
+  }
+
+  .container-pesan .content {
+    padding: 0 80px;
+  }
+  /* pesan */
+
+  /* tentang */
+  .container-tentang p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+  }
+  /* tentang */
 }
 /* mobile */
 
@@ -138,5 +391,38 @@ nav .menu a:hover {
     top: 80px;
     height: auto;
   }
+
+  .container-welcome {
+    flex-wrap: wrap;
+  }
+  /* card */
+  .card {
+    width: 100%;
+    height: 350px;
+  }
+
+  .card .content {
+    margin: 80px auto;
+    /* margin: auto auto; */
+    /* margin-left: auto;
+        margin-right: auto; */
+  }
+  /* card */
+
+  /* pesan */
+
+  .container-pesan {
+    flex-wrap: wrap;
+    height: 260px;
+  }
+
+  .btn-pesan {
+    margin: 0;
+  }
+
+  .container-pesan .content {
+    padding: 0 80px;
+  }
+  /* pesan */
 }
 /* tab */
