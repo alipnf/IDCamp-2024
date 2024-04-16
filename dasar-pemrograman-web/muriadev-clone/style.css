@@ -278,6 +278,38 @@ main {
 
 /* main */
 
+/* footer */
+footer {
+  padding: 16px;
+  margin-top: 200px;
+  background-color: #3b3844;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+footer h1 span {
+  color: #7e22ce;
+}
+footer .alamat {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+footer .create {
+  color: #cbd5e1;
+}
+footer .copyright {
+  color: black;
+}
+/* footer */
+
 /* Responsif */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -395,6 +427,11 @@ main {
   .container-welcome {
     flex-wrap: wrap;
   }
+
+  .container-judul {
+    width: 100%;
+  }
+
   /* card */
   .card {
     width: 100%;
