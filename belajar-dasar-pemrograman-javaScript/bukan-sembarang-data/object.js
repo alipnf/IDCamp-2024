@@ -13,3 +13,4 @@ console.log(email);
 
 delete user.name;
 console.log(user);
+console.log(user["password"]);
